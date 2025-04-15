@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="10% desconto"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 03:55:46 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI2OzIwMjUtMDQtMDg7IjAxOjUxOjUzICI7MjYyMg=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI2OzIwMjUtMDQtMDg7IjAzOjU1OjQ2ICI7MTsyNzM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Digite o valor da compra&quot;" newline="True"/>
+            <declare name="valorCompra, valorDesconto, novovalor" type="Integer" array="False" size=""/>
+            <input variable="valorCompra"/>
+            <if expression="valorCompra&gt;=100">
+                <then>
+                    <output expression="&quot;Parab&#233;ns! Voc&#234; ganhou um desconto de 10%.&quot;" newline="True"/>
+                    <output expression="&quot;valor do desconto:&quot;" newline="True"/>
+                    <assign variable="valorCompra" expression="valorCompra * 0.10"/>
+                    <input variable="novovalor"/>
+                    <output expression="valorCompra" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; n&#227;o ganhou desconto.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

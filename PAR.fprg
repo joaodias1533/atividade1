@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="PAR"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 01:51:04 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI2OzIwMjUtMDQtMDg7IjAxOjQzOjEyICI7MjYxOA=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODI2OzIwMjUtMDQtMDg7IjAxOjUxOjA0ICI7MTsyNzI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;digite um numero par&quot;" newline="True"/>
+            <declare name="numUM" type="Integer" array="False" size=""/>
+            <input variable="numUM"/>
+            <if expression="numUM % 2 == 0">
+                <then>
+                    <output expression="&quot;O NUMERO &#201; PAR!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O NUMERO NAO &#201; PAR&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
